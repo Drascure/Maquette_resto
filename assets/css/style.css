@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    /* Pour gérer l'alignement vertical des enfants de ma nav, j'utilise align-items */
+    align-items: center;
+    /* Afin d'écarter les éléments entre eux, j'utilise justify-content */
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    padding: 0 0.2rem 0 0.2rem;
+}
+
+#img_header {
+    display: flex;
+    background-image: url(../img/hamburger.jpg);
+    background-position: center;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
