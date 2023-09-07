@@ -1,9 +1,39 @@
+/* Importation des fonts */
+@font-face {
+    /* Création d'un raccourci */
+    font-family: "playfairDR";
+    src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "playfairDR", serif;
+}
+
 nav {
     display: flex;
     /* Pour gérer l'alignement vertical des enfants de ma nav, j'utilise align-items */
     align-items: center;
     /* Afin d'écarter les éléments entre eux, j'utilise justify-content */
     justify-content: space-between;
+    height: 3rem;
+    box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
+    background-color: aliceblue;
+    /* Le z-index ne fonctionne pas avec une position statique qui est par défaut */
+    z-index: 1;
+    position: fixed;
+    /* Permet de remettre à 0 la distance entre l'élément et le haut de la page */
+    top: 0;
+    width: 100%;
+}
+
+#logo {
+    padding: 1rem 1rem 1rem 2rem;
+    letter-spacing: 0.4rem;
+    font-weight: 500;
 }
 
 ul {
@@ -12,7 +42,7 @@ ul {
 }
 
 li {
-    padding: 0 0.2rem 0 0.2rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 #img_header {
@@ -23,4 +53,12 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+h1 {
+    letter-spacing: 0.3rem;
+    font-weight: 50;
+    color: rgba(0, 0, 0, 0.664);
 }
